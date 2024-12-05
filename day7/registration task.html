@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./img.png" alt="Centered Image" weight="250" height="250"/>
+        <h1><center><mark>Dragon Boat Festival Registration Form</mark></center></h1>
+        <hr>
+        </div>
+        <h2>Date:01/11/2024</h2>
+        <h2>Location:Hyderabad</h2>
+        <hr>
+    <form action="https://formsubmit.co/ajayajay9848@gmail.com" method="post">
+        <!-- Team Information -->
+        <fieldset>
+            <legend><strong>Team Information </strong></legend>
+            <label for="team-name">Team Name:</label>
+            <input type="text" id="team-name" name="team-name" required><br><br>
+
+            <label for="team-category">Category:</label>
+            <select id="team-category" name="team-category" required>
+                <option value="mixed">Mixed</option>
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+            </select><br><br>
+            </fieldset>
+
+        <!-- Participant Details -->
+        <fieldset>
+            <legend><strong>Participant Details</strong></legend>
+            <label for="participant-name">Name:</label>
+            <input type="text" id="participant-name" name="participant-name" required><br><br>
+
+            <label for="participant-age">Age:</label>
+            <input type="number" id="participant-age" name="participant-age" min="12" required><br><br>
+
+            <label for="participant-email">Email:</label>
+            <input type="email" id="participant-email" name="participant-email" required><br><br>
+
+            <label for="participant-phone">Phone:</label>
+            <input type="tel" id="participant-phone" name="participant-phone" required><br><br>
+
+            <label for="contact"> Contact Name:</label>
+            <input type="text" id="emergency-contact" name="emergency-contact" required><br><br>
+
+            <label for="emergency-phone">Emergency Contact Phone:</label>
+            <input type="tel" id="emergency-phone" name="emergency-phone" required><br><br>
+        </fieldset>
+
+        
+         <!-- Registration Fee -->
+         <fieldset>
+            <legend><strong>Registration Fee</strong></legend>
+            <label for="feeAmount">Amount:</label><br>
+            <input type="text" id="feeAmount" name="feeAmount" value="150 per person" readonly><br><br>
+            
+            <label for="paymentMethod">Payment Method:</label><br>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="bankTransfer">Bank Transfer</option>
+                <option value="cash">Cash</option>
+                <option value="online">Online Payment</option>
+            </select>
+        </fieldset>
+        
+        <!--  Consent -->
+          
+            <legend><strong>Consent</strong></legend>
+            <p>By submitting this form, I confirm that all team members are participating voluntarily and understand the risks involved in dragon boat racing. We agree to abide by the event rules and regulations.</p>
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to the terms and conditions.</label><br><br>
+
+
+        <button type="submit">Register</button>
+    </form>
+        
+
+
+    
+    
+</body>
+</html>
